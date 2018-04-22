@@ -1,0 +1,700 @@
+[wrapper]:Error compiling data in: click_students_from_group_button,
+  Click on button students after selecting group.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\students_page.py", line 265, in click_students_from_group_button
+    return StudentsList(self.driver)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\students_page.py", line 185, in __init__
+    self.driver.find_element(*StudentsListLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id="modal-window"]/section//button[1]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test19_opening_students_list_editor_after_selecting_group,
+ Check opportunity of opening student's list editor after
+        selecting group and click on button 'students'.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suit_students_page.py", line 354, in test19_opening_students_list_editor_after_selecting_group
+    students_list = self.students_page.\
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\students_page.py", line 265, in click_students_from_group_button
+    return StudentsList(self.driver)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\students_page.py", line 185, in __init__
+    self.driver.find_element(*StudentsListLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id="modal-window"]/section//button[1]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test08_add_equal_students_with_admin,
+ Check opportunity of adding two equal students by administrator.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suit_students_page.py", line 152, in test08_add_equal_students_with_admin
+    self.assertTrue(actual_save_data_changes_button.is_enabled())
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 159, in is_enabled
+    return self._execute(Command.IS_ELEMENT_ENABLED)['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test01_open_development_panel,
+  Check that user can open development & research.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Development & Research'
++ Development & Research
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_about_page.py", line 21, in test01_open_development_panel
+    expected_result)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  ::  != Development & Research
+[wrapper]:Error compiling data in: test02_open_quality_assurance_panel,
+  Check that user can open quality assurance.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Quality Assurance'
++ Quality Assurance
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_about_page.py", line 30, in test02_open_quality_assurance_panel
+    expected_result)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  ::  != Quality Assurance
+[wrapper]:Error compiling data in: test03_open_management_panel,
+  Check that user can open quality assurance.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Management and Mentoring'
++ Management and Mentoring
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_about_page.py", line 38, in test03_open_management_panel
+    expected_result)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  ::  != Management and Mentoring
+[wrapper]:Error compiling data in: test04_open_additional_thanks_panel,
+  Check that user can open quality assurance.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Additional Thanks'
++ Additional Thanks
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_about_page.py", line 46, in test04_open_additional_thanks_panel
+    expected_result)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  ::  != Additional Thanks
+[wrapper]:Error compiling data in: test06_create_edit_empty_fields_student,
+  Checking button after filling with empty fields.
+        It will be failed.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_admin_page.py", line 95, in test06_create_edit_empty_fields_student
+    self.assertFalse(is_enabled_submit_button)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+[wrapper]:Error compiling data in: test07_create_edit_empty_fields_group,
+  Checking button after filling by empty fields.
+        It will be failed.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_admin_page.py", line 114, in test07_create_edit_empty_fields_group
+    self.assertFalse(is_enabled_submit_button)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+[wrapper]:Error compiling data in: test08_create_edit_max_length_fields_user,
+  Checking button after filling login/password
+        with more than max length.
+        P.S max length of login/password field is 10 symbols.
+        It will be failed.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_admin_page.py", line 133, in test08_create_edit_max_length_fields_user
+    self.assertFalse(is_enabled_submit_button)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+[wrapper]:Error compiling data in: test09_create_edit_symbols_user,
+  Checking button after filling login/password
+         with special symbols
+        It will be failed.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_admin_page.py", line 151, in test09_create_edit_symbols_user
+    self.assertFalse(is_enabled_submit_button)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+[wrapper]:Error compiling data in: test13_add_expert_without_name,
+  Check  the adding of expert with empty field 'name'
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_creating_group_.py", line 131, in test13_add_expert_without_name
+    expert_form = self.group_page.CreateGroupWindow().get_experts_form()
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 507, in __init__
+    until(EC.element_to_be_clickable(CreateGroupWindowLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[wrapper]:Error compiling data in: test14_add_expert_non_valid_name,
+  Check  the adding of expert with number in field 'name'
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_creating_group_.py", line 140, in test14_add_expert_non_valid_name
+    expert_form = self.group_page.CreateGroupWindow().get_experts_form()
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 507, in __init__
+    until(EC.element_to_be_clickable(CreateGroupWindowLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[wrapper]:Error compiling data in: open_left_menu,
+  Move mouse on left side page.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 381, in open_left_menu
+    .until(EC.visibility_of_element_located(LeftMenuLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[wrapper]:Error compiling data in: test16_add_expert_empty_name,
+  Check  the adding of expert with empty field 'name'
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != 'Special symbols are not allowed.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_creating_group_.py", line 163, in test16_add_expert_empty_name
+    self.assertEqual(warning_message, MESSAGE_INVALID_EXPERT_NAME)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: None != Special symbols are not allowed.
+[wrapper]:Error compiling data in: test20_check_autoincrement_finish_date,
+  Check  the autoincrement of ''start date' field  after entering ' finish date' field
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '04/23/2018'
++ 04/23/2018
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_creating_group_.py", line 194, in test20_check_autoincrement_finish_date
+    self.assertEqual(start_date_value, TEST_START_DATE)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  ::  != 04/23/2018
+[wrapper]:Error compiling data in: test04_adding_more_5_teachers,
+  Check  adding more 5 teachers, while there is only 5 teachers
+        are presented in drop list.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_editing_group.py", line 48, in test04_adding_more_5_teachers
+    teachers_list = self.group_page.CreateGroupWindow(). \
+AttributeError: 'CreateGroupWindow' object has no attribute 'get_added_teachers_list'
+[wrapper]:Error compiling data in: test11_add_expert_without_name,
+  Check  the adding of expert with empty field 'name'.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_editing_group.py", line 111, in test11_add_expert_without_name
+    expert_form = self.group_page.CreateGroupWindow().get_experts_form()
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 507, in __init__
+    until(EC.element_to_be_clickable(CreateGroupWindowLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[wrapper]:Error compiling data in: test12_add_expert_non_valid_name,
+  Check  the adding of expert with number in field 'name'.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_editing_group.py", line 120, in test12_add_expert_non_valid_name
+    expert_form = self.group_page.CreateGroupWindow().get_experts_form()
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 507, in __init__
+    until(EC.element_to_be_clickable(CreateGroupWindowLocators.
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[wrapper]:Error compiling data in: test13_adding_more_5_same_expert,
+  Check  the adding of  experts with same value in field 'name'.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: ['N. Varenko', '', '', '', '', '', '', ''] != {'', 'N. Varenko'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_editing_group.py", line 135, in test13_adding_more_5_same_expert
+    self.assertEqual(experts_list, set(experts_list))
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: ['N. Varenko', '', '', '', '', '', '', ''] != {'', 'N. Varenko'}
+[wrapper]:Error compiling data in: test14_add_expert_empty_name,
+  Check  the adding of expert with empty field 'name'.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != 'Special symbols are not allowed.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_editing_group.py", line 145, in test14_add_expert_empty_name
+    self.assertEqual(warning_message, MESSAGE_INVALID_EXPERT_NAME)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: None != Special symbols are not allowed.
+[wrapper]:Error compiling data in: test15_add_empty_teacher,
+  Check  adding more 5 teachers, while there is only 5 teachers
+        are presented in drop list.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_editing_group.py", line 155, in test15_add_empty_teacher
+    teachers_list = self.group_page.CreateGroupWindow(). \
+AttributeError: 'CreateGroupWindow' object has no attribute 'get_added_teachers_list'
+[wrapper]:Error compiling data in: test04_open_add,
+  Open add page and check url.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro' != 'http://localhost:3000/Add'
+- http://localhost:3000/Groups/Dnipro
++ http://localhost:3000/Add
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 71, in test04_open_add
+    self.assertEqual(self.group_page.get_current_url(), expected_page_url)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro != http://localhost:3000/Add
+[wrapper]:Error compiling data in: test10_open_edit_group_left_menu,
+  Open edit group panel and check url.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro/DP-093-JS/info' != 'http://localhost:3000/Groups/Dnipro/DP-093-JS/info/edit'
+- http://localhost:3000/Groups/Dnipro/DP-093-JS/info
++ http://localhost:3000/Groups/Dnipro/DP-093-JS/info/edit
+?                                                   +++++
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 126, in test10_open_edit_group_left_menu
+    self.assertEqual(self.group_page.get_current_url(), expected_page_url)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro/DP-093-JS/info != http://localhost:3000/Groups/Dnipro/DP-093-JS/info/edit
+[wrapper]:Error compiling data in: test11_open_search_panel_left_menu,
+  Open search panel and check url.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro' != 'http://localhost:3000/Groups/Dnipro/DP-093-JS/Search'
+- http://localhost:3000/Groups/Dnipro
++ http://localhost:3000/Groups/Dnipro/DP-093-JS/Search
+?                                    +++++++++++++++++
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 135, in test11_open_search_panel_left_menu
+    self.assertEqual(self.group_page.get_current_url(), search_group_url)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro != http://localhost:3000/Groups/Dnipro/DP-093-JS/Search
+[wrapper]:Error compiling data in: delete_group_button,
+  Get delete button web element.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 212, in delete_group_button
+    return self.driver.find_element(*LeftMenuLocators.BUTTON_DELETE_GROUP)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title = "Delete"]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test12_delete_group_left_menu,
+  Check that admin can delete group.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 144, in test12_delete_group_left_menu
+    left_menu.delete_group_button().click()
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 212, in delete_group_button
+    return self.driver.find_element(*LeftMenuLocators.BUTTON_DELETE_GROUP)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title = "Delete"]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test16_open_edit_user_panel,
+  Check that user can open edit profile panel.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro' != 'http://localhost:3000/EditProfile'
+- http://localhost:3000/Groups/Dnipro
++ http://localhost:3000/EditProfile
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 188, in test16_open_edit_user_panel
+    self.assertEqual(right_menu.get_current_url(), expected_result)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro != http://localhost:3000/EditProfile
+[wrapper]:Error compiling data in: test19_open_groups_schedule_panel,
+  Check that user can open schedule panel in selected group.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 214, in test19_open_groups_schedule_panel
+    self.group_page.group_calendar_button().click()
+AttributeError: 'GroupsPage' object has no attribute 'group_calendar_button'
+[wrapper]:Error compiling data in: test21_open_edit_group_from_info_panel,
+  Check that user can open edit group panel in selected group.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro/DP-093-JS/message' != 'http://localhost:3000/Groups/Dnipro/DP-093-JS/info/edit'
+- http://localhost:3000/Groups/Dnipro/DP-093-JS/message
+?                                               ^ ^^^^^
++ http://localhost:3000/Groups/Dnipro/DP-093-JS/info/edit
+?                                               ^^^^^ ^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 233, in test21_open_edit_group_from_info_panel
+    self.assertEqual(self.group_page.get_current_url(), expected_result)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro/DP-093-JS/message != http://localhost:3000/Groups/Dnipro/DP-093-JS/info/edit
+[wrapper]:Error compiling data in: test24_open_search_panel_left_menu,
+  Open search panel and check url.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro' != 'http://localhost:3000/Groups/Dnipro/DP-093-JS/Search'
+- http://localhost:3000/Groups/Dnipro
++ http://localhost:3000/Groups/Dnipro/DP-093-JS/Search
+?                                    +++++++++++++++++
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 282, in test24_open_search_panel_left_menu
+    self.assertEqual(self.group_page.get_current_url(), edit_group_url)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro != http://localhost:3000/Groups/Dnipro/DP-093-JS/Search
+[wrapper]:Error compiling data in: delete_group_button,
+  Get delete button web element.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 212, in delete_group_button
+    return self.driver.find_element(*LeftMenuLocators.BUTTON_DELETE_GROUP)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title = "Delete"]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test25_delete_group_left_menu,
+  Check that coordinator can delete group.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 291, in test25_delete_group_left_menu
+    left_menu.delete_group_button().click()
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 212, in delete_group_button
+    return self.driver.find_element(*LeftMenuLocators.BUTTON_DELETE_GROUP)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title = "Delete"]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: create_group_button,
+  Get create button web element.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 197, in create_group_button
+    LeftMenuLocators.BUTTON_CREATE_GROUP))
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[wrapper]:Error compiling data in: delete_group_button,
+  Get delete button web element.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 212, in delete_group_button
+    return self.driver.find_element(*LeftMenuLocators.BUTTON_DELETE_GROUP)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title = "Delete"]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: edit_group_button,
+  Get edit button web element.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\caesar_items\pages\groups_page.py", line 207, in edit_group_button
+    return self.driver.find_element(*LeftMenuLocators.BUTTON_EDIT_GROUP)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "D:\Caesar_project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@title = "Edit"]"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[wrapper]:Error compiling data in: test29_open_search_panel_left_menu,
+  Open search panel and check url.
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 30, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 1202, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'http://localhost:3000/Groups/Dnipro' != 'http://localhost:3000/Groups/Dnipro/DP-093-JS/Search'
+- http://localhost:3000/Groups/Dnipro
++ http://localhost:3000/Groups/Dnipro/DP-093-JS/Search
+?                                    +++++++++++++++++
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_group_page.py", line 330, in test29_open_search_panel_left_menu
+    self.assertEqual(self.group_page.get_current_url(), edit_group_url)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.3\helpers\pycharm\teamcity\diff_tools.py", line 36, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: http://localhost:3000/Groups/Dnipro != http://localhost:3000/Groups/Dnipro/DP-093-JS/Search
+[wrapper]:Error compiling data in: test13_all_fields_empty_submit_button_is_disabled,
+  Check if all field is empty, submit button disabled.
+Traceback (most recent call last):
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\resource\error_handler.py", line 24, in wrapper
+    return function(*args, **kwargs)
+  File "D:\Caesar_project-b50fc09599792bfdbffca3ddb562169f5955071d\ñaesar\tests\test_suite_login_page.py", line 140, in test13_all_fields_empty_submit_button_is_disabled
+    self.assertFalse(self.login_page.submit_button().is_enabled())
+  File "C:\Users\JEKA\AppData\Local\Programs\Python\Python36\Lib\unittest\case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
