@@ -1,8 +1,4 @@
-from resource.constants_creating_group import TEST_TOO_LONG_GROUP_NAME, \
-    MESSAGE_NAME_IS_MORE_20_CHAR, MESSAGE_PLEASE_ENTER_THE_GROUP_NAME, \
-    APP_TITLE, TEST_GROUP_NAME, \
-    TEST_ITERATIONS, MESSAGE_EMPTY_EXPERT_NAME, TEST_SECOND_EXPERT_NAME, \
-    MESSAGE_INVALID_EXPERT_NAME, TEST_THIRD_EXPERT_NAME, EXISTED_GROUP_NAME
+from resource.constants_creating_group import *
 from resource.users_base import first_admin
 from tests.test_base import TestBase
 from resource.error_handler import logger_exception
@@ -123,29 +119,7 @@ class TestCreatingGroup(TestBase):
         self.assertEqual(warning_message, MESSAGE_INVALID_EXPERT_NAME)
 
     @logger_exception
-    def test13_adding_more_5_same_expert(self):
-        """ Check  the adding of  experts with same value in field 'name'."""
-        i = TEST_ITERATIONS
-        while i > 0:
-            self.group_page.CreateGroupWindow().add_expert(
-                TEST_THIRD_EXPERT_NAME)
-            i -= 1
-        experts_list = self.group_page.CreateGroupWindow(). \
-            get_added_experts_list()
-        self.assertEqual(experts_list, set(experts_list))
-
-    @logger_exception
-    def test14_add_expert_empty_name(self):
-        """ Check  the adding of expert with empty field 'name'."""
-        self.group_page.CreateGroupWindow().add_expert(
-            TEST_THIRD_EXPERT_NAME)
-        expert_form = self.group_page.CreateGroupWindow().get_experts_form()
-        warning_message = self.group_page.CreateGroupWindow(). \
-            get_warning_message_by_form(expert_form)
-        self.assertEqual(warning_message, MESSAGE_INVALID_EXPERT_NAME)
-
-    @logger_exception
-    def test15_add_empty_teacher(self):
+    def test13_add_empty_teacher(self):
         """ Check  adding more 5 teachers, while there is only 5 teachers
         are presented in drop list."""
         i = TEST_ITERATIONS
